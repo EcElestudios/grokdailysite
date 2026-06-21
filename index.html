@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grok Daily - AI News & Insights</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Grok Daily</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="#publish">For Publishers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to Grok Daily</h1>
+            <p>Your daily dose of AI, tech, and xAI insights. Based in the City of London.</p>
+            <button onclick="document.getElementById('articles').scrollIntoView()">Browse Articles</button>
+        </section>
+        
+        <section id="articles">
+            <h2>Latest Articles</h2>
+            <div id="article-list"></div>
+        </section>
+        
+        <section id="subscribe">
+            <h2>Subscribe for $1/mo</h2>
+            <p>Unlock all premium articles.</p>
+            <button onclick="subscribe()">Subscribe Now ($1/mo)</button>
+            <p id="sub-status"></p>
+        </section>
+        
+        <section id="publish">
+            <h2>Publisher Account</h2>
+            <p>Demo: Add new articles (simulated)</p>
+            <input type="text" id="new-title" placeholder="Article Title">
+            <textarea id="new-content" placeholder="Article Content"></textarea>
+            <label><input type="checkbox" id="new-premium"> Premium</label>
+            <button onclick="publishArticle()">Publish Article</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Grok Daily. City of London.</p>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>
